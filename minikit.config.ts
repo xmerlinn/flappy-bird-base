@@ -10,9 +10,9 @@ const ROOT_URL =
  */
 export const minikitConfig = {
   accountAssociation: {
-    header: "",
-    payload: "",
-    signature: "",
+    header: process.env.FARCASTER_HEADER || "",
+    payload: process.env.FARCASTER_PAYLOAD || "",
+    signature: process.env.FARCASTER_SIGNATURE || "",
   },
   baseBuilder: {
     ownerAddress: "0x879e4a7d26a0b03D5Aa7b34c0F609cCA93071fD8",
